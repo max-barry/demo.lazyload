@@ -1,0 +1,41 @@
+body {
+	margin: 55px 16px;
+	background-color: #F8F8F8;
+}
+
+main {
+	max-width: 960px;
+	display: block;
+	margin: 0 auto;
+	background-color: white;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+#hero {
+	position: relative;
+}
+#hero h1 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0 22px;
+	font-size: 22px;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 76px;
+	text-shadow: 1px 1px 4px black;
+	color: white;
+	text-transform: uppercase;
+}

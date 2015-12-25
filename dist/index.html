@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lazy Loading Image Workflow | mxbry.com</title>
+    <meta name="description" content="Demo site for an example workflow which generates blurred placeholders and lazy loads full res images with Layzr.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="Lazy Loading Image Workflow | mxbry.com">
+    <meta name="twitter:description" content="Demo site for an example workflow which generates blurred placeholders and lazy loads full res images with Layzr.js">
+    <meta name="twitter:site" content="@mxbrry">
+    <meta name="twitter:site:id" content="276204106">
+    <meta name="twitter:creator" content="@mxbrry">
+    <meta name="twitter:creator:id" content="276204106">
+    <meta name="twitter:url" content="http://lazyload.demo.mxbry.com/">
+    <meta name="twitter:domain" content="http://lazyload.demo.mxbry.com/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image:src" content="http://lazyload.demo.mxbry.com/inline2.placeholder.jpg">
+    <meta name="twitter:image:width" content="1000">
+    <meta name="twitter:image:height" content="1000">
+    <meta property="og:title" content="Lazy Loading Image Workflow | mxbry.com">
+    <meta property="og:description" content="Demo site for an example workflow which generates blurred placeholders and lazy loads full res images with Layzr.js">
+    <meta property="og:url" content="http://lazyload.demo.mxbry.com/">
+    <meta property="og:site_name" content="Lazy Loading Image Workflow | mxbry.com">
+    <meta property="og:image" content="http://lazyload.demo.mxbry.com/inline2.placeholder.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:see_also" content="http://mxbry.com/">
+
+	<link rel="stylesheet" href="./style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300|Montserrat:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<main>
+		<section id="hero">
+			<img src="./hero.placeholder.jpg" data-layzr="./hero.jpg">
+			<h1>Blurry Placeholders!</h1>
+		</section>
+		<section id="content">
+			<p><strong>I've used my Grunt task <a href="https://www.npmjs.com/package/grunt-jimp">grunt-jimp</a> to generate tiny (in file size) placeholder images, and prevent content jumping whilst I wait for <a href="https://github.com/callmecavs/layzr.js/tree/master">Layzr.js</a> to lazy load my hi-res sources. I would suggest throttling your machine's connection (via Chrome Devtools) to see the effect best. If you want to know more about this project, have a look at what I wrote for Medium.</strong></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero quia placeat, minima natus sit laboriosam? Sint iure sunt modi mollitia amet deserunt, recusandae accusamus iste quo accusantium eos id soluta molestias ipsam vitae. Facere excepturi, sunt tenetur error voluptas eum optio inventore quis eos itaque! Facere officiis, doloremque eaque.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae libero quia placeat, minima natus sit laboriosam? Sint iure sunt modi mollitia amet deserunt, recusandae accusamus iste quo accusantium eos id soluta molestias ipsam vitae. Facere excepturi, sunt tenetur error voluptas eum optio inventore quis eos itaque! Facere officiis, doloremque eaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, nesciunt error voluptatibus saepe sit eum id, a optio aliquid doloribus ipsa enim itaque dignissimos repellendus illo eveniet? Animi, asperiores, fuga!</p>
+			<img src="inline1.placeholder.jpg" data-layzr="./inline1.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ex ea sapiente dolorum, nesciunt consectetur accusamus nihil saepe, quo est impedit, ipsam, eveniet maxime sit sed atque ducimus mollitia quas obcaecati aspernatur? Optio at mollitia ad fugiat atque officiis vitae, itaque iste rem assumenda nostrum omnis debitis hic provident dolorem consequatur consectetur numquam corporis ea incidunt dolore, nam illo explicabo. Tempore corporis, quod recusandae eligendi eaque, qui enim. Rem natus repellat unde, hic eveniet minima aspernatur omnis consequuntur asperiores ipsa dolorum iure provident veritatis, illo deleniti optio id, culpa libero consequatur esse suscipit. Ab voluptatem quae nostrum perferendis voluptatibus fugit esse, aspernatur illum quidem suscipit accusamus ipsa, delectus, fuga accusantium deserunt sit voluptas. Quis deleniti eaque fugit, iure incidunt, reiciendis!</p>		
+			<img src="inline2.placeholder.jpg" data-layzr="./inline2.jpg">
+		</section>
+	</main>
+
+	<script src="./layzr.min.js"></script>
+	<script>
+		var layzr = new Layzr();
+	</script>
+</body>
+</html>

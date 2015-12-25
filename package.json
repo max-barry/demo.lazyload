@@ -1,0 +1,19 @@
+{
+  "name": "lazy-image-workflow",
+  "version": "1.0.0",
+  "description": "An example workflow for using lazy loading images with lowres placeholders.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Barry",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-jimp": "0.0.4",
+    "grunt-surge": "^0.6.2",
+    "load-grunt-tasks": "^3.4.0"
+  }
+}
